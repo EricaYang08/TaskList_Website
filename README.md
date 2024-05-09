@@ -9,6 +9,7 @@ Thus, it contain three part: introduction, one day task list, task calendar
 # To do list: 
 Each Task can be deleted or modified. There is no limit number for adding new tasks.
 Both close button and deletion has animation:
+
 <img width="1429" alt="Screenshot 2024-05-09 at 14 09 02" src="https://github.com/EricaYang08/TaskList_Website/assets/112456665/3a589095-d2be-41e5-89c8-36fe79849e0d">
 
 # Task Calendar: 
