@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-do-List</title>
+</head>
+<body>
+    <div id="introduction">
+        <header>
+            <nav>
+                <ul>
+                    <li class = "intro_element"><a href = "#current_intro">Introduction</a></li>
+                    <li class = "intro_element"><a href = "#to_do_list">Task List</a></li>
+                    <li class = "intro_element"><a href = "#calender_div">Calender</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id='current_intro'>
+            <div id=border>
+                <div class="intro_box">
+                    <h1>Task Tracker</h1>
+                </div>
+                <div class="intro_box">
+                    <p>Time to build your to-do List Here!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "to_do_list">
+        <div id = "to_do_border">
+            <h2>Build You To Do List for today</h2>
+            <div id= "input_box">
+                <input type = "text" id = "input_task" placeholder = "New Task">
+                <button id = "add_button">Add</button>
+            </div>
+            <ul id = "List">
+                <li class = "to_do_item">
+                    <span class = "task_content">Your first task</span><button class = "close_button">&times;</button></li>
+                <li class = "to_do_item">
+                    <span class = "task_content">Second task</span><button class = "close_button">&times;</button></li>
+            </ul>
+        </div>
+    </div>
+    <h2 class = "transition">Want to build to do list for more than one day?</h2>
+    <h2 class = "transition">no problem!</h2>
+    <h2 class = "transition">Use the calendar to build to-do list from Big Bang to eternity!</h2>
+    
+   <div id = "calender_div">
+        <div id = "task_calender">
+            <div id = "calender">
+                <div class = "calendar-header">
+                    <button class = "calender_button" id = "prevMonth">&lt;</button>
+                    <h2 id = "monthYear">1</h2>
+                    <button class = "calender_button" id = "nextMonth">&gt;</button>
+                </div>
+                <div class = "calendar-body">
+                    <div class = "weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class = "days"></div>
+                </div>
+            </div>
+            <div id = "event_hold">
+                <div id = "day_hold">
+                </div>
+                <div id = "eventForm" style = "display:none;">
+                    <input type = "text" id = "eventTitle" placeholder="task title">
+                    <input type = "time" id = "eventStartTime">
+                    <input type = "time" id = "eventEndTime">
+                    <button id = "saveEvent">Save</button>
+                </div>
+                <button id = 'addEventButton' class = 'event_add'>&plus;</button>
+                <div id = "eventContainer" class = "event_place"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class = "myFooter">
+            <p>@copy 2024 Wenhui Yang</p>
+        </div>
+    </footer>
+    <script src = "to_do_list.js"></script>
+    <script src = "calendar.js"></script>
+</body>
+
+</html>
